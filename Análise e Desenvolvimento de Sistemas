@@ -1,14 +1,18 @@
 import java.util.Scanner;
 
 public class Main {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
 String nomeCompleto;
 int idade;
-Scanner scanner = new Scanner(System.in);
+Scanner escanear = new Scanner(System.in);
 System.out.printf("Nome: ");
-nomeCompleto = scanner.nextLine();
+nomeCompleto = escanear.nextLine();
 System.out.printf("Idade: ");
-idade = scanner.nextInt();
-        PrintStream printf = System.out.printf("O %s tem %d anos de idade \n", nomeCompleto, idade);
+idade = escanear.nextInt();
+        System.out.printf("O %s tem %d anos de idade \n", nomeCompleto, idade);
+        escanear.close();
 }
 }
