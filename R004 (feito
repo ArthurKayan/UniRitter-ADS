@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class ExercicioR004
+{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+       int numero = scanner.nextInt();
+       for(int i = 1; i <= numero; i++){
+           int numero2 = 3 * i;
+           System.out.println("Os números múltiplos de 3 são: " + numero2);
+       }
+        scanner.close();
+    }
+}
