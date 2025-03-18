@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class ExercicioS006 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int numero = scanner.nextInt();
+        int quadrado = 0;
+        System.out.println("O Numero escolhido é " + numero);
+        if (numero > 0) {
+            quadrado = numero * numero;
+        }
+        System.out.printf("O Quadrado do numero escolhido é: " + quadrado);
+    }
+}
