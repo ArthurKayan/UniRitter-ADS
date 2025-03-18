@@ -1,0 +1,15 @@
+public class M008 {
+    public static void main(String[] args) {
+        int[][] mA = {
+            {9,2,4},
+            {7,3,2},
+            {2,5,1}
+        };
+        int[][]mB = {
+            {3,2,1},
+            {6,4,9},
+            {5,8,10}
+        };
+        int[][] m = (mA+mB);
+    }
+}
