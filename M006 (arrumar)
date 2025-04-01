@@ -1,23 +1,31 @@
-public class M006 {
-    public static void main(String[] args) {
+import java.util.Arrays;
 
+public class Main {
+    public static void main(String[] args) {
         int[][] mA = {
                 {3, 6, 9},
                 {6, 4, 5},
                 {9, 5, 1}
         };
         Matriz matriz = new Matriz();
-    System.out.println(matriz.ehSimetrica(mA));
+        System.out.println(matriz.ehSimetrica(mA));
+    }
 }
-}
-     static class matriz {
-        public boolean ehSimetrica(int[][] m) {
-            boolean simetrica = true;
-            for (int i = 0; i < m.length; i++) {
-                for (int j = 0; j < m.length; j++) {
-                    simetrica = simetrica &&
-                            m[i][j] == m[j][i];
+
+class Matriz {
+    public boolean ehSimetrica(int[][] m) {
+
+        if (m == null || m.length == 0 || m.length != m[0].length) {
+            return false;
+        }
+
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m[i].length; j++) {
+                if (m[i][j] != m[j][i]) {
+                    return false;
                 }
             }
         }
+        return true;
     }
+}
