@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class M022
+{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int contador = 0;
+        int numero 
+        for (numero = 1, numero < 30, contador ++);
+        System.out.println()
+    }
+}
