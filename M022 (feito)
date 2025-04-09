@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+        int[]matriz ={0, 1, 2, 1, 5, 9, 4, 8, 7} ;
+        boolean [] encontrados = new boolean[10];
+        boolean [] repetidos = new boolean[10];
+
+        System.out.print("os números repetidos são: ");
+        boolean primeiro = true;
+        for (int num : matriz) {
+            if (encontrados[num]) {
+                if (!repetidos[num]) {
+                    if (!primeiro) {
+                        System.out.print(", ");
+                    }
+                    System.out.print(num);
+                    primeiro = false;
+                    repetidos[num] = true;
+                }
+            } else { encontrados[num] = true;
+                    }
+                }
+            }
+        }
