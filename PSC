@@ -1,0 +1,71 @@
+public class funcionario
+
+{
+
+    System.out.printf("PSC");
+    private String matricula;
+    private String nome;
+    private int dataNasc;
+
+    public funcionario() {
+    }
+
+
+    public String getMatricula() {
+        return matricula;
+    }
+
+    public void setMatricula(String matricula) {
+        this.matricula = matricula;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public int getDataNasc() {
+        return dataNasc;
+    }
+
+    public void setDataNasc(int dataNasc) {
+        this.dataNasc = dataNasc;
+    }
+
+    public funcionario (String matricula, String nome, int dataNasc){
+            this.matricula =  matricula;
+            this.nome = nome;
+            this.dataNasc = dataNasc;
+        }
+
+}
+
+// CÓDIGO PROGRAMADOR
+
+import java.util.List;
+import java.util.ArrayList;
+public class programador extends funcionario {
+private ArrayList<Linguagem> linguagens = new ArrayList<Linguagem>();
+    public Programador(String matricula, String nome, int dataNasc){
+        super(matricula, nome, dataNasc);
+    }
+    public void addLinguagem (Linguagem l) {
+        if (linguagens.size() < 3 )
+            linguagens.add(l);
+        else System.out.println("Erro: já foram informados 3 linguagens para esse(a) programador(a)?");
+    }
+    public ArrayList<Linguagem> getLinguagens(){ return linguagens; }
+    public void exibeRanking(){
+        int i;
+        for (i=0;i<linguagens.size();i++){
+            System.out.println((i+1) + "" + linguagens.get(i).getNome();
+        }
+    }
+    @Override
+    public String toString() {
+        return "Nome: " + getNome() + ", Matrícula: " + getMatricula() + ", Nascimento: " + getDataNasc()
+    }
+}
