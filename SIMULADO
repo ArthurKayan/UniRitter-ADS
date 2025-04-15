@@ -1,0 +1,63 @@
+import java.util.Scanner;
+public class Simulad01 {
+    Scanner scanner = System.out.println (new Scanner());
+    int valorembrulho = Scanner(System.in);
+    System.out.println("O Valor do embrulho é: " + valorembrulho);
+    Scanner scanner = System.out.println (new Scanner());
+    int valorcompra = Scanner(System.in);
+            System.out.println("O Valor da compra do produto é: " + valorcompra);
+            diferenca = valorcompra - valorembrulho;
+            System.out.println("O Valor a mais do presente é: " + diferenca);
+            valortotal = valorcompra + valorembrulho;
+            System.out.println("O Valor total em tudo que pagou foi: " valortotal;)
+}
+// SIMULADO01
+
+public class Simulad02 {
+    int quadril = "50 cm";
+    int altura = "1,80";
+    String sexo =  "M/F";
+    calculo = quadril / (altura * Math.sqrt(altura) - 18)
+    if (sexo = M ; calculo < 8)
+    {
+        System.out.println("O Homem está abaixo do peso");
+    }
+        if (sexo = F ; calculo < 20)
+    {
+        System.out.println("A Mulher está abaixo do peso");
+    }
+            if (sexo = M ; calculo = 8 and 20)
+
+    {
+        System.out.println("O " + getHomem() + "O Homem está dentro do peso normal");
+    }
+                if (sexo = F ; calculo = 21 and 32)
+    {
+        System.out.println("A Mulher está dentro do peso normal");
+    }
+                if (sexo = M ; calculo > 21 and 25) {
+                    System.out.println("O Homem está com sobrepeso");
+    }
+                if (sexo = F ; calculo > 33 and 38)
+    {
+        System.out.println("A Mulher está com sobrepeso");
+    }
+                if (sexo = M ; calculo > 25){
+        System.out.println("O Homem está obeso")
+    }
+                if (sexo = F; calculo > 38){
+                    System.out.println("A Mulher está obesa");
+    }
+
+//SIMULADO 02
+
+public class Simulad03 {
+    int fatorial = 5
+    int calculofatorial = fatorial - 1
+            if (calculofatorial > 0 ){
+        int multiplicacao =  fatorial * calculofatorial
+        System.out.println("O Fatorial de " + fatorial + "é: " + multiplicacao);
+    }
+}
+
+//SIMULADO 03
