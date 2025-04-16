@@ -13,43 +13,46 @@ public class Simulad01 {
 }
 // SIMULADO01
 
-public class Simulad02 {
-    int quadril = "50 cm";
-    int altura = "1,80";
-    String sexo =  "M/F";
-    calculo = quadril / (altura * Math.sqrt(altura) - 18)
-    if (sexo = M ; calculo < 8)
-    {
-        System.out.println("O Homem está abaixo do peso");
-    }
-        if (sexo = F ; calculo < 20)
-    {
-        System.out.println("A Mulher está abaixo do peso");
-    }
-            if (sexo = M ; calculo = 8 and 20)
+import java.util.Scanner;
 
-    {
-        System.out.println("O " + getHomem() + "O Homem está dentro do peso normal");
-    }
-                if (sexo = F ; calculo = 21 and 32)
-    {
-        System.out.println("A Mulher está dentro do peso normal");
-    }
-                if (sexo = M ; calculo > 21 and 25) {
-                    System.out.println("O Homem está com sobrepeso");
-    }
-                if (sexo = F ; calculo > 33 and 38)
-    {
-        System.out.println("A Mulher está com sobrepeso");
-    }
-                if (sexo = M ; calculo > 25){
-        System.out.println("O Homem está obeso")
-    }
-                if (sexo = F; calculo > 38){
-                    System.out.println("A Mulher está obesa");
-    }
+public class SIMULADO{
+    public static void main(String[] args) {
 
-//SIMULADO 02
+        double quadril = 50.0;
+        double altura = 1.80;
+        try (Scanner scanner = new Scanner(System.in)) {
+            System.out.println("Digite o sexo: " + "M ou F");
+            String sexo = scanner.nextLine().toUpperCase(); // Lê o sexo do usuário e converte para maiúsculas
+            double calculo = quadril / (altura * Math.sqrt(altura) - 18);
+
+            if (sexo.equals("M") && calculo < 8) {
+                System.out.println("O Homem está abaixo do peso");
+            }
+            if (sexo.equals("F") && calculo < 20) {
+                System.out.println("A Mulher está abaixo do peso");
+            }
+            if (sexo.equals("M") && calculo >= 8 && calculo <= 20) {
+                System.out.println("O Homem está dentro do peso normal");
+            }
+            if (sexo.equals("F") && calculo >= 21 && calculo <= 32) {
+                System.out.println("A Mulher está dentro do peso normal");
+            }
+            if (sexo.equals("M") && calculo > 20 && calculo <= 25) {
+                System.out.println("O Homem está com sobrepeso");
+            }
+            if (sexo.equals("F") && calculo > 32 && calculo <= 38) {
+                System.out.println("A Mulher está com sobrepeso");
+            }
+            if (sexo.equals("M") && calculo > 25) {
+                System.out.println("O Homem está obeso");
+            }
+            if (sexo.equals("F") && calculo > 38) {
+                System.out.println("A Mulher está obesa");
+            }
+        }
+    }
+}
+//SIMULADO EX 02
 
 public class Simulad03 {
     int fatorial = 5
