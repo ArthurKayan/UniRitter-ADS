@@ -1,0 +1,27 @@
+import java.util.Scanner;
+// Nome: Funcao.java
+public class funcao{
+     // Este programa verifica se um número é primo ou não
+    public static void main(String[ args]){
+        Scanner Scanner = new Scanner(System.in);
+        System.out.print("Digite um número inteiro: ");
+        // Lê um número inteiro do usuário
+        int numeroprimo = Scanner.nextInt();
+        boolean ehPrimo = true;
+        if (numeroprimo < 2) {
+            ehPrimo = false;
+        } else {
+            for (int i = 2; i <= Math.sqrt(numeroprimo); i++) {
+                if (numeroprimo % i == 0) {
+                    ehPrimo = false;
+                    break;
+                }
+            }
+        } 
+        if (ehPrimo) {
+            System.out.println(numeroprimo + " é primo.");
+        } else {
+            System.out.println(numeroprimo + " não é primo.");
+        }
+    }
+}
