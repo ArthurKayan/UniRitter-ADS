@@ -1,0 +1,17 @@
+//Calculo IMC
+import java.util.Scanner;
+public class SIMULADO{
+    public static void main(String[] args) {
+    Scanner scanner = new Scanner(System.in);
+    System.out.println("Digite o peso: ");
+        double peso = scanner.nextDouble();  // Lê o valor do peso
+        // double peso = 70; // Exemplo de valor para o peso
+    System.out.println("Digite a altura: ");
+        double altura = scanner.nextDouble(); // Lê o valor da altura
+        // double altura = 1.75; // Exemplo de valor para a altura
+        scanner.nextLine(); // Limpa o buffer do scanner{
+        // scanner.nextLine(); // Limpa o buffer do scanner
+            double calculo = peso / (altura * altura); // Calcula o IMC
+            System.out.println("O IMC é: " + calculo); // Exibe o IMC calculado
+        }
+    }
