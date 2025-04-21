@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class MeuPrograma {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Solicita o nome do produto
+        System.out.println("Digite o nome do produto:");
+        String nomeProduto = scanner.nextLine();
+
+        // Solicita o valor do produto
+        System.out.println("Digite o valor do produto:");
+        double valorProduto = scanner.nextDouble();
+
+        // Calcula o acréscimo de 30%
+        double acrescimo = valorProduto * 0.30;
+        double valorFinal = valorProduto + acrescimo;
+
+        // Exibe o resultado
+        System.out.println("O produto " + nomeProduto + " com acréscimo de 30% vale: " + valorFinal + " reais.");
+
+        scanner.close();
+    }
+}
+"AJUDA DO COPILOT"
