@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class PSC1 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Digite o número para fazer seu antecessor e sucessor");
+        int numero = scanner.nextInt();
+        numero = numero + 1;
+        System.out.println("O Número sucessor sem usar estrutura de condição é: " + numero);
+        numero = numero - 2;
+        System.out.println("O Número antecessor sem usar estrutura de condição é:" + numero);
+    }
+}
+
+
+import java.util.Scanner;
+public class PSC2 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int peso1 = 2;
+        int peso2 = 3;
+        int peso3 = 5;
+        System.out.println("OS PESOS RESPECTIVAMENTE DAS PROVAS É: " + peso1 + "," + peso2 + "," + peso3);
+        System.out.println("Digite a primeira nota do candidato do concurso: ");
+        int nota1 = scanner.nextInt();
+        System.out.println("Digite a segunda nota do candidato do concurso: ");
+        int nota2 = scanner.nextInt();
+        System.out.println("Digite a terceira nota do candidato do concurso: ");
+        int nota3 = scanner.nextInt();
+        System.out.println("as respectivas notas sequencialmente de cada prova (3 provas), são: ");
+    }
+}
