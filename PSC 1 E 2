@@ -26,6 +26,23 @@ public class PSC2 {
         int nota2 = scanner.nextInt();
         System.out.println("Digite a terceira nota do candidato do concurso: ");
         int nota3 = scanner.nextInt();
-        System.out.println("as respectivas notas sequencialmente de cada prova (3 provas), são: ");
+        System.out.println("as respectivas notas sequencialmente de cada prova (3 provas), são: " + nota1 + "," + nota2 + "," + nota3);
+        double somaproduto = (nota1 * peso1 + nota2 * peso2 + nota3 * peso3);
+        System.out.println("A SOMA DOS PRODUTOS DE NOTA + PESO É: " + somaproduto);
+        double somapesos = (peso1 + peso2 + peso3);
+        System.out.println("A SOMA DOS PESOS DAS AVALIAÇÕES É: " + somapesos);
+        double mediaponderada = somaproduto / somapesos;
+        System.out.println("A MÉDIA PONDERADA DO CANDIDATO É: " + mediaponderada);
+    }
+
+import java.util.Scanner;
+public class PSC3 {
+    public static void main(String[] args) {
+        for (int i = 1; i <= 10; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
     }
 }
