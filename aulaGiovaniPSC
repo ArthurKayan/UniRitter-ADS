@@ -1,1 +1,51 @@
+//Ajuda da IA no exercico m007 até a letra B
+import java.util.Arrays;
 
+public class aulagiovanipsc {
+    public static void main(String[] args) {
+        int[][] matriz1 = {{3, 5, 7}};
+        int[][] matriz2 = {{9, 18, 2}};
+
+        // Soma as matrizes
+        int[][] matrizSoma = new int[matriz1.length][matriz1[0].length];
+        for (int i = 0; i < matriz1.length; i++) {
+            for (int j = 0; j < matriz1[i].length; j++) {
+                matrizSoma[i][j] = matriz1[i][j] + matriz2[i][j];
+            }
+        }
+
+        // Imprime a matriz soma
+        System.out.println("Matriz resultante da soma:");
+        for (int[] linha : matrizSoma) {
+            for (int valor : linha) {
+                System.out.print(valor + " ");
+            }
+            System.out.println();
+        }
+
+        // Calcula média corretamente
+        int somaTotal = 0;
+        int totalElementos = 0;
+        for (int i = 0; i < matrizSoma.length; i++) {
+            for (int j = 0; j < matrizSoma[i].length; j++) {
+                somaTotal += matrizSoma[i][j];
+                totalElementos++;
+            }
+        }
+        int media = somaTotal / totalElementos;
+        System.out.println("Média dos valores: " + media);
+
+        // Encontra valores menores que a média
+        System.out.println("Valores menores que a média:");
+        for (int i = 0; i < matriz1.length; i++) {
+            for (int j = 0; j < matriz1[i].length; j++) {
+                if (matriz1[i][j] < media) {
+                    System.out.print(matriz1[i][j] + " ");
+                }
+                if (matriz2[i][j] < media) {
+                    System.out.print(matriz2[i][j] + " ");
+                }
+            }
+        }
+    }
+}
