@@ -1,0 +1,22 @@
+//LETRA A
+import java.util.Arrays;
+public class aulagiovanipsc2 {
+    public static void main(String[] args) {
+        int[][] matrizbidimensional = {{3, 5, 7}};
+        int[][] matrizbidimensional2 = {{9, 18, 2}};
+        int[][] matrizsoma = new int[matrizbidimensional.length][matrizbidimensional[0].length];
+        for (int i = 0; i < matrizbidimensional.length; i++) {
+            for (int j = 0; j < matrizbidimensional[i].length; j++) {
+                matrizsoma[i][j] = matrizbidimensional[i][j] + matrizbidimensional2[i][j]; // Apenas soma aqui
+            }
+            System.out.println("Matriz resultante das colunas somadas é:");
+            int i1;
+            for (i1 = 0; i1 < matrizsoma.length; i1++) {
+                int j;
+                for (j = 0; j < matrizsoma[i1].length; j++) {
+                    System.out.print(matrizsoma[i1][j] + " ");
+                }
+                }
+            }
+        }
+    }
