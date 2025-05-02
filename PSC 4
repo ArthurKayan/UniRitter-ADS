@@ -1,0 +1,15 @@
+// Nome: ex4.java
+public class ex4 {
+    public static void main(String[] args) {
+        int n = 5; // número de linhas do Triângulo de Floyd
+        int num = 1; // número inicial
+
+        for (int i = 1; i <= n; i++) { // controla as linhas
+            for (int j = 1; j <= i; j++) { // controla os números em cada linha
+                System.out.print(num + " "); // imprime o número atual
+                num++; // incrementa o número
+            }
+            System.out.println(); // pula para a próxima linha
+        }
+    }
+}
