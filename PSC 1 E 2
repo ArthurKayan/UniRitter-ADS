@@ -34,15 +34,3 @@ public class PSC2 {
         double mediaponderada = somaproduto / somapesos;
         System.out.println("A MÉDIA PONDERADA DO CANDIDATO É: " + mediaponderada);
     }
-
-import java.util.Scanner;
-public class PSC3 {
-    public static void main(String[] args) {
-        for (int i = 1; i <= 10; i++) {
-            for (int j = 1; j <= i; j++) {
-                System.out.print(j + " ");
-            }
-            System.out.println();
-        }
-    }
-}
