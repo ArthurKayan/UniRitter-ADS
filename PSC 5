@@ -1,0 +1,34 @@
+import java.util.Arrays;
+import java.util.Random;
+import java.util.Scanner;
+
+public class ex5 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
+        int[] matriz = new int[10]; // Cria um array de 10 posições
+        int contpar = 0; // Contador de números pares
+        int maior = Integer.MIN_VALUE; // Inicializa o maior valor com o menor inteiro possível
+
+        // Preenche o array com números aleatórios entre 1 e 100
+        for (int i = 0; i < matriz.length; i++) {
+            matriz[i] = random.nextInt(100) + 1; // Gera números entre 1 e 100
+        }
+
+        // Calcula os valores pares e o maior valor
+        for (int num : matriz) {
+            if (num % 2 == 0) {
+                contpar++;
+            }
+            if (num > maior) {
+                maior = num;
+            }
+        }
+
+        // Exibe os resultados
+        System.out.println("Valores armazenados no vetor: " + Arrays.toString(matriz));
+        System.out.println("Quantidade de valores pares: " + contpar);
+        System.out.println("Maior valor armazenado: " + maior);
+    }
+}
