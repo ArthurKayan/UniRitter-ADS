@@ -1,0 +1,28 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+public class ex6 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int[][] matriz = new int[3][3];
+        System.out.println("Digite os elementos da matriz 3x3 (apenas números inteiros positivos):");
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                int input;
+                do {
+                    System.out.printf("Elemento [%d][%d]: ", i, j);
+                    input = scanner.nextInt();
+                } while (input < 0); // Aceita apenas números inteiros positivos
+                matriz[i][j] = input;
+            }
+            matriz[i][i] = matriz[i][i]; // Mantém os elementos da diagonal principal
+            System.out.println("Elemento da diagonal principal: " + matriz[i][i]);
+            System.out.println("Matriz atualizada:");
+            for (int k = 0; k < 3; k++) {
+                for (int l = 0; l < 3; l++) {
+                    System.out.print(matriz[k][l] + " ");
+                }
+                System.out.println();
+            }
+        }
+    }
+}
