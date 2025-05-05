@@ -1,0 +1,11 @@
+import java.util.Scanner;
+public class S002 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int Valor1 = scanner.nextInt();
+        int Valor2 = scanner.nextInt();
+        double resultado = Math.pow(Valor2, Valor1);
+        System.out.println(Valor1 % Valor2);
+        System.out.println(Valor2+ " elevado a " + Valor1+ " é igual a: " + resultado);
+        }
+  }
